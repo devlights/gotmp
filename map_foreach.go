@@ -2,7 +2,8 @@ package main
 
 import "fmt"
 
-func main() {
+// MapForEach Mapをforループする場合のサンプル
+func MapForEach() {
 	m := map[string]int{
 		"hoge": 100,
 		"fuga": 200,
