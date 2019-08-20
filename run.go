@@ -2,5 +2,12 @@ package main
 
 func main() {
 	// Go Tutorial
-	GoTutorial()
+	WithBeginEnd("Go Tutorial", func() {
+		GoTutorial()
+	})
+
+	// GoRoutineCaptureValue
+	WithBeginEnd("Go Routine Capture Value", func() {
+		GoRoutineCaptureValue()
+	})
 }
