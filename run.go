@@ -10,4 +10,9 @@ func main() {
 	WithBeginEnd("Go Routine Capture Value", func() {
 		GoRoutineCaptureValue()
 	})
+
+	// NamedFieldsRequired
+	WithBeginEnd("Named Fields Required", func() {
+		NamedFieldsRequired()
+	})
 }
