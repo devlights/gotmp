@@ -1,8 +1,11 @@
 all: \
-	_build_linux_x86 \
-	_build_linux_x64 \
+	build \
 	_display \
 	_clean
+
+build: \
+	_build_linux_x86 \
+	_build_linux_x64
 
 _build_linux_x86:
 	GOOS=linux GOARCH=386 go build -o linux_x86 main.go
