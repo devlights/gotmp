@@ -16,9 +16,19 @@ _build_linux_x64:
 
 display: \
 	build \
+	_display_file \
 	_display_od \
 	_display_hexdump \
 	_display_elf_format
+
+_display_file:
+	@echo ''
+	@echo '[file   ]----------------------------------------------------'
+	file -e elf linux_x86
+	@echo '[file   ]----------------------------------------------------'
+	file -e elf linux_x64
+	@echo '[file   ]----------------------------------------------------'
+	@echo ''
 
 _display_od:
 	@echo ''
