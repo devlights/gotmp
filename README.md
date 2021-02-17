@@ -9,5 +9,7 @@
 - [Go 1.16 is released](https://blog.golang.org/go1.16)
 - [Download and Install](https://golang.org/doc/install)
 - [Go 1.16 Release Notes](https://golang.org/doc/go1.16)
+  - [Go 1.16 リリースノート 日本語訳](https://qiita.com/c-yan/items/f6f504d5e1c1caceace4)
 - [package embed](https://pkg.go.dev/embed)
 - [How to Use //go:embed](https://blog.carlmjohnson.net/post/2021/how-to-use-go-embed/)
+- [Go 1.16連載が始まります](https://future-architect.github.io/articles/20210207/)
