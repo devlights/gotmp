@@ -1,4 +1,4 @@
-FROM gitpod/workspace-full-vnc
+FROM gitpod/workspace-full
 
 USER gitpod
 
@@ -10,9 +10,6 @@ USER gitpod
 #     sudo rm -rf /var/lib/apt/lists/*
 #
 # More information: https://www.gitpod.io/docs/config-docker/
-RUN sudo apt update && \
-    sudo apt upgrade -y && \
-    sudo apt autoremove && \
-    sudo apt install -y libgtk-3-dev && \
-    sudo apt install -y libgl1-mesa-dev xorg-dev && \
+RUN sudo apt -q update && \
+    sudo apt install -yq bc && \
     sudo rm -rf /var/lib/apt/lists/*
