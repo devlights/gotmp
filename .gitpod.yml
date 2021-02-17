@@ -1,5 +1,5 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: make install
+  - init: make installgo116
     command: . ~/.bashrc
