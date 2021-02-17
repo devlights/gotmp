@@ -1,3 +1,3 @@
 module github.com/devlights/gotmp
 
-go 1.15
+go 1.16
