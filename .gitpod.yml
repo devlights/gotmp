@@ -5,3 +5,4 @@ image:
 vscode:
   extensions:
     - golang.go
+    - ms-vscode.hexeditor
