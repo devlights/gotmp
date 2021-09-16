@@ -11,5 +11,5 @@ USER gitpod
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 RUN sudo apt -q update && \
-    sudo apt install -yq bc && \
+    sudo apt install -yq bc tree nkf && \
     sudo rm -rf /var/lib/apt/lists/*
