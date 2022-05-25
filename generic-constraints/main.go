@@ -1,3 +1,10 @@
+// Goのスライスで s[a:b:c] と指定した場合の 3つ目 の値指定について
+//
+// REFERENCES
+//   - https://stackoverflow.com/questions/27938177/golang-slice-slicing-a-slice-with-sliceabc
+//   - https://stackoverflow.com/questions/12768744/re-slicing-slices-in-golang/18911267#18911267
+//   - https://tip.golang.org/doc/go1.2#three_index
+//   - https://go.dev/ref/spec#Slice_expressions
 package main
 
 import (
