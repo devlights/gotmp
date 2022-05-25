@@ -2,6 +2,8 @@ image: gitpod/workspace-go:latest
 tasks:
   - name: install staticheck
     command: go install honnef.co/go/tools/cmd/staticcheck@latest
+  - name: install go-task
+    command: go install github.com/go-task/task/v3/cmd/task@latest
 vscode:
   extensions:
     - golang.go
