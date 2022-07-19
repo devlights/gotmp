@@ -17,4 +17,6 @@
 # GoLand
 .idea/
 
-gotmp
+go.mod
+go.sum
+*.go
