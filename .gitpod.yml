@@ -5,10 +5,7 @@ tasks:
   - name: install go-task
     command: go install github.com/go-task/task/v3/cmd/task@latest
   - name: install go-tip
-    command: go install golang.org/dl/gotip@latest
-  - name: download go-tip
-    command: gotip download
+    command: go install golang.org/dl/gotip@latest && gotip download
 vscode:
   extensions:
     - golang.go
-    - dracula-theme.theme-dracula
