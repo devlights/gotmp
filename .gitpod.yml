@@ -5,7 +5,7 @@ tasks:
   - name: install go-task
     init: go install github.com/go-task/task/v3/cmd/task@latest
   - name: install go-tip
-    init: go install golang.org/dl/gotip@latest && gotip download
+    init: go install golang.org/dl/gotip@latest
   - name: download go-tip
     command: gotip download
 vscode:
