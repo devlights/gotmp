@@ -1,0 +1,17 @@
+version: '3'
+
+tasks:
+  init:
+    cmds:
+      - gotip mod init app
+      - touch main.go
+      - gp open main.go
+  run:
+    cmds:
+      - gotip run main.go
+  version:
+    cmds:
+      - gotip version
+  clean:
+    cmds:
+      - rm go.mod *.go
