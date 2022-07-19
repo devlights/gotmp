@@ -4,7 +4,7 @@
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/devlights/gotmp)
 
-Gotip is installed, so you can try the latest version of Go at any time.
+[gotip](https://pkg.go.dev/golang.org/dl/gotip) is installed, so you can try the latest version of Go at any time.
 
 ```sh
 $ task version
