@@ -4,10 +4,6 @@ tasks:
     init: go install honnef.co/go/tools/cmd/staticcheck@latest
   - name: install go-task
     init: go install github.com/go-task/task/v3/cmd/task@latest
-  - name: install go-tip
-    init: go install golang.org/dl/gotip@latest
-  - name: download go-tip
-    command: gotip download
 vscode:
   extensions:
     - golang.go
