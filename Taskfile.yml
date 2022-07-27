@@ -3,7 +3,7 @@ version: '3'
 tasks:
   init:
     cmds:
-      - gotip mod init app
+      - go mod init app
       - touch main.go
       - gp open main.go
   run:
