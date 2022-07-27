@@ -8,10 +8,10 @@ tasks:
       - gp open main.go
   run:
     cmds:
-      - gotip run main.go
+      - go run main.go
   version:
     cmds:
-      - gotip version
+      - go version
   clean:
     cmds:
       - rm go.mod *.go
