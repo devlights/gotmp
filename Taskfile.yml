@@ -4,7 +4,6 @@ tasks:
   init:
     cmds:
       - go mod init app
-      - touch main.go
       - gp open main.go
   run:
     cmds:
