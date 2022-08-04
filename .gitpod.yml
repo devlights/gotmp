@@ -1,4 +1,5 @@
-image: gitpod/workspace-go:latest
+image: gitpod/workspace-go:2022-08-04-03-33-59
+
 tasks:
   - name: install staticheck
     init: go install honnef.co/go/tools/cmd/staticcheck@latest
