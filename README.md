@@ -5,10 +5,6 @@
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/devlights/gotmp)
 
 ```sh
-$ task version
-task: [version] go version
-go version go1.18.4 linux/amd64
-
 $ task init
 task: [init] go mod init app
 go: creating new go.mod: module app
