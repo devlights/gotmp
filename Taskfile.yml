@@ -13,4 +13,4 @@ tasks:
       - go version
   clean:
     cmds:
-      - rm go.mod *.go
+      - rm go.* *.go
