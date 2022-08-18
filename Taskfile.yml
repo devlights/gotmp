@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 tasks:
   init:
@@ -6,6 +6,13 @@ tasks:
       - go mod init app
       - go get -u github.com/devlights/gomy@latest
       - gp open main.go
+  fmt:
+    cmds:
+      - goimports -w .
+  vet:
+    cmds:
+      - go vet ./...
+      - staticcheck ./...
   run:
     cmds:
       - go run main.go
