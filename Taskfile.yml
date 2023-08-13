@@ -8,7 +8,6 @@ tasks:
       - echo -e "package main\nfunc main(){\n}" > main.go
       - task: fmt
       - task: run
-      - gp open main.go
   fmt:
     cmds:
       - goimports -w .
