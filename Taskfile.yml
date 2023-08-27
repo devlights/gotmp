@@ -1,6 +1,9 @@
 version: "3"
 
 tasks:
+  default:
+    cmds:
+      - task: run
   init:
     cmds:
       - go mod init app
@@ -28,4 +31,5 @@ tasks:
       - go version
   clean:
     cmds:
+      - go clean
       - rm go.* *.go

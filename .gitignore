@@ -17,6 +17,7 @@
 # GoLand
 .idea/
 
+app
 go.mod
 go.sum
 *.go
