@@ -21,11 +21,19 @@ tasks:
   lint:
     cmds:
       - revive -formatter stylish ./...
-  run:
+  build:
     cmds:
       - go mod tidy
-      - go run main.go
-    silent: true
+      - go build -o app main.go
+    sources:
+      - ./*.go
+    generates:
+      - app{{exeExt}}
+    method: timestamp
+  run:
+    deps: [ build ]
+    cmds:
+      - ./app
   version:
     cmds:
       - go version
@@ -33,3 +41,4 @@ tasks:
     cmds:
       - go clean
       - rm go.* *.go
+      - rm -rf ./.task
