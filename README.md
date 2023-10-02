@@ -8,12 +8,19 @@
 $ task init
 task: [init] go mod init app
 go: creating new go.mod: module app
-task: [init] touch main.go
-task: [init] gp open main.go
+task: [init] go get -u github.com/devlights/gomy@latest
+go: added github.com/devlights/gomy v0.6.0
+task: [init] echo -e "package main\nfunc main(){\n}" > main.go
+task: [fmt] goimports -w .
+task: [build] go mod tidy
+task: [build] go build -o app main.go
 
 $ task run
-task: [run] go run main.go
+task: Task "build" is up to date
+task: [run] ./app
 
 $ task clean
-task: [clean] rm go.mod *.go
+task: [OS:clean] go clean
+task: [OS:clean] rm go.* *.go
+task: [OS:clean] rm -rf ./.task
 ```
