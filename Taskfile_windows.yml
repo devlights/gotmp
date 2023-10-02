@@ -1,0 +1,9 @@
+version: '3'
+
+tasks:
+  clean:
+    cmds:
+      - go clean
+      - cmd /c "del /F /Q go.*"
+      - cmd /c "del /F /Q *.go"
+      - cmd /c "rd /s /q .task"
