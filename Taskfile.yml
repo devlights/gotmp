@@ -15,7 +15,7 @@ tasks:
       - go get -u github.com/devlights/gomy@latest
       - echo -e "package main\nfunc main(){\n}" > main.go
       - task: fmt
-      - task: run
+      - task: build
   fmt:
     cmds:
       - goimports -w .
