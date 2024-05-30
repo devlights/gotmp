@@ -38,7 +38,7 @@ tasks:
   run:
     deps: [ build ]
     cmds:
-      - ./app{{exeExt}}
+      - ./app{{exeExt}} {{.CLI_ARGS}}
   version:
     cmds:
       - go version
