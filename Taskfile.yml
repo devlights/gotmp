@@ -29,7 +29,7 @@ tasks:
   build:
     cmds:
       - go mod tidy
-      - go build -o app{{exeExt}} main.go
+      - go build -o app{{exeExt}} *.go
     sources:
       - ./*.go
     generates:
