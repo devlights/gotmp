@@ -4,5 +4,5 @@ tasks:
   clean:
     cmds:
       - go clean
-      - rm go.* *.go
+      - rm -f go.* *.go
       - rm -rf ./.task

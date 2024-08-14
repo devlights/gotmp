@@ -1,5 +1,8 @@
 version: "3"
 
+vars:
+  APP_NAME: app
+
 includes:
   OS: 
     taskfile: ./Taskfile_{{OS}}.yml
@@ -11,7 +14,7 @@ tasks:
       - task: run
   init:
     cmds:
-      - go mod init app
+      - go mod init {{.APP_NAME}}
       - go get -u github.com/devlights/gomy@latest
       - echo -e "package main\nfunc main(){\n}" > main.go
       - task: fmt
@@ -29,16 +32,16 @@ tasks:
   build:
     cmds:
       - go mod tidy
-      - go build -o app{{exeExt}} *.go
+      - go build -o {{.APP_NAME}}{{exeExt}} *.go
     sources:
       - ./*.go
     generates:
-      - app{{exeExt}}
+      - ./{{.APP_NAME}}{{exeExt}}
     method: timestamp
   run:
     deps: [ build ]
     cmds:
-      - ./app{{exeExt}} {{.CLI_ARGS}}
+      - time ./{{.APP_NAME}}{{exeExt}} {{.CLI_ARGS}}
   version:
     cmds:
       - go version
